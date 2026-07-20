@@ -413,7 +413,21 @@
     
     <!-- End of headEnd -->
 	
-<style id="__framer-edit-btn-hidden">#__framer-edit-button,#__framer-editorbar,[id*="editbutton"],[id*="edit-button"]{display:none!important;opacity:0!important;pointer-events:none!important;visibility:hidden!important;}</style></head>
+<style id="__framer-edit-btn-hidden">#__framer-edit-button,#__framer-editorbar,[id*="editbutton"],[id*="edit-button"]{display:none!important;opacity:0!important;pointer-events:none!important;visibility:hidden!important;}</style>
+    <style id="__hide-framer-remix">
+        .framer-1bk6z3r, 
+        a[href*="framer.link"],
+        a[href*="framer.com"][target="_blank"]:has(div:contains("Remix")),
+        div:has(> a[href*="framer.link"]),
+        button:has(> div > a[href*="framer.link"]) {
+            display: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            pointer-events: none !important;
+            z-index: -9999 !important;
+        }
+    </style>
+    </head>
 <body>
 	
 	<!-- Start of bodyStart -->
